@@ -1,0 +1,8 @@
+Feature: API ,DB verification
+  @test
+  Scenario:
+    Given user on Search All Job page
+    When  user using " Washington","Department" to search job
+    And   get currant location information from API
+    And   currant location information from DataBae
+    Then  all information from two environment should matching
